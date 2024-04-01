@@ -14,6 +14,8 @@ RUN ./configure
 RUN gmake
 RUN gmake install
 
+WORKDIR /
+
 # TODO: continue multi-stage build to carry over only the ELF binaries and libraries
     # auto-generated libraries can be found in:
     # - /graphviz/lib/gvc/.libs
